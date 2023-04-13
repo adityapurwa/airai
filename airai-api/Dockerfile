@@ -8,4 +8,4 @@ FROM base AS final
 COPY --from=base /app /app
 COPY . .
 
-CMD ["python","-m", "uvicorn", "main:app", "--host", "0.0.0.0"]
+CMD exec gunicorn --bind :$PORT --workers 1 --threads 8 --timeout 0 main:app --worker-class uvicorn.workers.UvicornWorker

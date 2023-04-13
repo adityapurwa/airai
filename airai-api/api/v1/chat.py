@@ -11,6 +11,7 @@ router = APIRouter()
 meteo = Meteo()
 
 
+@router.get("")
 @router.get("/")
 @limiter.limit("5/minute")
 async def chat(request: Request):
