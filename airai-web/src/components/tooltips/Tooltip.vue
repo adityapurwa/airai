@@ -7,7 +7,7 @@
     <slot></slot>
   </div>
   <teleport to="body">
-    <div ref="tooltip">
+    <div ref="tooltip" v-show="tooltipVisible">
       <slot name="tooltip"></slot>
     </div>
   </teleport>
