@@ -19,7 +19,7 @@ const bgForTime = getDynamicBackground();
     <footer
       class="mt-4 rounded-lg bg-white bg-opacity-90 p-2 text-xs backdrop-blur-xl"
     >
-      Copyright &copy; {{ new Date().getFullYear() }} Aditya.
+      <a href="https://github.com/adityapurwa/airai">Open Source AGPL v3 - Aditya</a>
     </footer>
   </div>
 </template>
